@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coreon.js Documentation</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="docs.html" class="active">Documentation</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="documentation">
+            <h1>Coreon.js Documentation</h1>
+            <p>Welcome to the Coreon.js documentation! Here you will find all the information you need to get started with Coreon.js, including installation instructions, feature descriptions, and usage examples.</p>
+
+            <h2>Getting Started</h2>
+            <p>To begin using Coreon.js, follow these steps:</p>
+            <ol>
+                <li>Install Coreon.js via npm:</li>
+                <pre><code>npm install coreon.js</code></pre>
+                <li>Import Coreon.js in your project:</li>
+                <pre><code>const Coreon = require('coreon.js');</code></pre>
+                <li>Initialize the framework:</li>
+                <pre><code>const app = new Coreon();</code></pre>
+            </ol>
+
+            <h2>Features</h2>
+            <p>Coreon.js comes equipped with a wide range of features:</p>
+            <ul>
+                <li>Advanced Middleware Support</li>
+                <li>Robust API Management</li>
+                <li>Real-time WebSocket Communication</li>
+                <li>Comprehensive Logging and Error Handling</li>
+                <li>Plugin Architecture for Extensibility</li>
+                <li>Database ORM for Simplified Data Management</li>
+                <li>Built-in Analytics and Notification Services</li>
+                <li>Customizable Configuration Options</li>
+                <li>Security Features Including Input Validation and Sanitization</li>
+                <li>And much more!</li>
+            </ul>
+
+            <h2>Examples</h2>
+            <p>Here are some examples of how to use Coreon.js:</p>
+            <h3>Creating a Simple API</h3>
+            <pre><code>
+app.get('/api/example', (req, res) => {
+    res.send('Hello from Coreon.js API!');
+});
+            </code></pre>
+
+            <h3>Using Middleware</h3>
+            <pre><code>
+app.use(Coreon.middleware.auth);
+            </code></pre>
+
+            <h2>Support</h2>
+            <p>If you have any questions or need further assistance, feel free to reach out to our community or check the issues section on our GitHub repository.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Coreon.js. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/hover.js"></script>
+    <script src="assets/js/showcase.js"></script>
+</body>
+</html>

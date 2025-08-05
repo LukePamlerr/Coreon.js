@@ -1,0 +1,37 @@
+// feature1.js
+
+class FeatureOne {
+    constructor() {
+        this.name = 'Feature One';
+        this.description = 'An advanced feature that provides enhanced functionality.';
+    }
+
+    initialize() {
+        console.log(`${this.name} initialized.`);
+        // Additional initialization logic
+    }
+
+    execute(params) {
+        console.log(`Executing ${this.name} with parameters:`, params);
+        // Main logic for the feature
+        return this.process(params);
+    }
+
+    process(data) {
+        // Process the data and return results
+        const result = data.map(item => item * 2); // Example processing
+        console.log(`Processed data:`, result);
+        return result;
+    }
+
+    static getInfo() {
+        return {
+            name: 'Feature One',
+            version: '1.0.0',
+            author: 'Coreon.js Team',
+            license: 'MIT'
+        };
+    }
+}
+
+export default FeatureOne;
